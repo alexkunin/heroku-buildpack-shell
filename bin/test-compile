@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# bin/test-compile <build-dir> <cache-dir> <env-dir>
+
+# fail hard
+set -o pipefail
+# fail harder
+set -eu
+
+bp_dir=$(cd $(dirname $0); cd ..; pwd)
+source $bp_dir/bin/compile
