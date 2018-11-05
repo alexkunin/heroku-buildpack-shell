@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ -f $1/test.sh ]; then
+  $1/test.sh || exit $?
+fi
